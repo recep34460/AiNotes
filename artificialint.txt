@@ -1,0 +1,74 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import tensorflow as tf
+from sklearn import preprocessing
+#read
+df = pd.read_csv("ilk_200.csv")
+
+
+#sort value
+#df = df.sort_values("egitim_durumu")
+
+#reset index
+#df = df.set_index("egitim_durumu")
+#write first parameter
+#egitim_durumu = ["egitim_durumu"]
+#egitim_durumu = list(set("egitim_durumu"))
+#for parametre in egitim_durumu:
+  #print(parametre)
+#write first parameter
+#search for missing values
+#missing_values = df.isnull()
+
+#print(missing_values)
+#take first 200 param
+#df_ilk_200 = df.iloc[:200]
+
+# Başka bir CSV dosyasına yazma
+#df_ilk_200.to_csv("ilk_200.csv")
+#take first 200 param
+
+ #Bar plot oluşturma
+#plt.bar(df["engel_durumu"], df["yas_araligi"])
+
+# Başlık ekleme
+#plt.title("Ülkelere Göre Nüfus")
+
+# Eksen etiketleri ekleme
+#plt.xlabel("Engel Durumu")
+#plt.ylabel("Yaş Aralığı)")
+# Scatter plot 
+#plt.scatter(df["engel_durumu"], df["yas_araligi"], color="black")
+
+# title 
+#plt.title("Engel Durumu ve Yaş Aralığı")
+
+# axis
+#plt.xlabel("Engel Durumu")
+#plt.ylabel("Yaş Aralığı")
+# Scatter plot 
+# Göster
+#plt.show()
+#delete donem and kurs_merkez_iilce
+#df = df.drop(["donem", "kurs_merkez_iilce"], axis=1)
+# separate Pendik
+#df_pendik = df[df["kurs_merkez_iilce"] == "Pendik"]
+# Write Pendik to csv file
+#df_pendik.to_csv("pendik.csv")
+#this command remove "ESENLER" on the DataFrame
+#df = df.loc[df["kurs_merkez_iilce"] != "PENDİK"]
+#print last 11 values
+#print(df.tail(11))
+#print last 5 parameters
+#print(df.tail())
+#print first 11 values
+#print(df.head(11))
+#print only first 5 parameters
+#print(df.head())
+#show info
+#print(df.info())
+#print whole df
+#print(df)
+##save csv
+#df.to_csv("2019-2023-ismek-kesin-kayitli-kursiyer-verileri.csv")
